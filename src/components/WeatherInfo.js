@@ -65,7 +65,12 @@ const WeatherInfo = () => {
               <div className="text-center mb-3" style={{ fontWeight: "620" }}>
                 {" "}
                 <span>
-                  <img src={location} height={"18px"} alt="image" />
+                  <img
+                    src={location}
+                    height={"18px"}
+                    className="mx-2"
+                    alt="image"
+                  />
                 </span>
                 {city_name}
               </div>
@@ -91,10 +96,11 @@ const WeatherInfo = () => {
                           style={{
                             height: "30px",
                             paddingTop: "5px",
-                            fontSize: "20px",
+                            fontSize: "16px",
                           }}
                         >
-                          {weather.ApparentTemperature.Metric.Value} &#8451;
+                          <b> {weather.ApparentTemperature.Metric.Value} </b>
+                          &#8451;
                         </div>
                         <div style={{ height: "10px" }}>Feels like</div>
                       </div>
@@ -119,10 +125,10 @@ const WeatherInfo = () => {
                           style={{
                             height: "30px",
                             paddingTop: "5px",
-                            fontSize: "20px",
+                            fontSize: "16px",
                           }}
                         >
-                          {weather.RelativeHumidity} %
+                          <b>{weather.RelativeHumidity}</b> %
                         </div>
                         <div style={{ height: "10px" }}>Humidity</div>
                       </div>

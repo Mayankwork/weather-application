@@ -86,7 +86,7 @@ const SearchComponents = () => {
           placeholder="Enter City Name"
           value={inputValue}
           onChange={handleInputChange}
-          className="text-center"
+          className="text-center mt-3"
         />
         {suggestions && suggestions.length > 0 && (
           <ul ref={suggestionsRef} className="list">

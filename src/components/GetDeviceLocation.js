@@ -68,7 +68,7 @@ const GetDeviceLocation = () => {
   };
 
   return (
-    <div>
+    <div className="mb-3">
       <Button
         className="get-device-location-button w-100 mt-2"
         onClick={handleGetLocation}

@@ -11,7 +11,7 @@ const MainCard = () => {
         <Card.Header className="weather-title">Weather App</Card.Header>
         <Card.Body>
           <SearchComponents />
-          <Divider />
+          <Divider  />
           <GetDeviceLocation />
         </Card.Body>
       </Card>
